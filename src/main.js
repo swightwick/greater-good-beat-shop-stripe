@@ -4,6 +4,8 @@ import App from './App.vue'
 import vueScrollto from 'vue-scrollto'
 import Meta from 'vue-meta'
 import VideoBg from 'vue-videobg'
+import inViewportDirective from 'vue-in-viewport-directive'
+
 
 const options = {
   key: 'pk_test_ZU5n2XpVg6W59UWV3zPq7ca9',
@@ -11,12 +13,13 @@ const options = {
   locale: 'auto',
   currency: 'GBP',
   billingAddress: false,
-  panelLabel: 'Subscribe {{amount}}'
+  panelLabel: 'Purchase {{amount}}'
 }
 
 Vue.use(VueStripeCheckout, options);
 Vue.component('video-bg', VideoBg)
 Vue.use(vueScrollto)
+Vue.directive('in-viewport', inViewportDirective)
 Vue.use(Meta)
 Vue.config.productionTip = false
 

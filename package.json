@@ -13,6 +13,7 @@
     "socicon": "^3.0.5",
     "vue": "^2.5.16",
     "vue-aplayer": "^1.5.1",
+    "vue-in-viewport-directive": "^2.0.0",
     "vue-meta": "^1.5.0",
     "vue-scrollto": "^2.11.0",
     "vue-stripe-checkout": "^1.0.3",

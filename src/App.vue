@@ -4,6 +4,8 @@
     <Hero/>
     <Body/>
     <About/>
+    <Spotify/>
+    <Faq/>
     <Video/>
     <Terms/>
     <section id="line"></section>
@@ -17,6 +19,8 @@ import Hero from './components/Hero.vue'
 import Body from './components/Body.vue'
 import Video from './components/Video.vue'
 import About from './components/About.vue'
+import Spotify from './components/Spotify.vue'
+import Faq from './components/Faq.vue'
 import Terms from './components/Terms.vue'
 import Social from './components/Social.vue'
 import Footer from './components/Footer.vue'
@@ -28,8 +32,10 @@ export default {
     Header,
     Hero,
     Body,
+    Faq,
     Video,
     About,
+    Spotify,
     Terms,
     Social,
     Footer
@@ -38,7 +44,7 @@ export default {
     // if no subcomponents specify a metaInfo.title, this title will be used
     title: 'GG',
     // all titles will be injected into this template
-    titleTemplate: '%s | Greater Good Beatmaker',
+    titleTemplate: 'Greater Good | Music producer. Beats, instrumentals, composition. Beats for sale',
     meta: [
       // OpenGraph data (Most widely used)
       {property: 'og:title', content: 'Beats for sale'},
@@ -154,8 +160,8 @@ iframe .timeline-Header{
   background: transparent !important;
 }
 .aplayer-body .aplayer-pic{
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
 }
 .aplayer .aplayer-title{
   text-transform: uppercase;
@@ -164,6 +170,7 @@ iframe .timeline-Header{
 
 article .aplayer .aplayer-body .aplayer-info{
   padding: 0 .5rem;
+  height: 50px;
 }
 
 article .aplayer .aplayer-body .aplayer-info .aplayer-music .aplayer-title {
@@ -210,7 +217,45 @@ article .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb{
   }
 }
 
+h2{
+  opacity: 0;
+}
+h2.in-viewport{
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
 
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
 
 
 </style>
