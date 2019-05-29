@@ -1,7 +1,7 @@
 <template>
 <section id="video">
   <div class="row"> 
-    <iframe id="ytplayer" type="text/html" width="100%" height="405" style="display:block;" src="https://www.youtube.com/embed/?listType=playlist&list=PLira2lCbJjXV7fhTI2r3BQ-JwRQAkm8Ua" frameborder="0" allowfullscreen></iframe>
+    <iframe id="ytplayer" title="beat playlist" type="text/html" width="100%" height="405" style="display:block;" src="https://www.youtube.com/embed/?listType=playlist&list=PLira2lCbJjXV7fhTI2r3BQ-JwRQAkm8Ua" frameborder="0" allowfullscreen></iframe>
   </div>
 </section>
 </template>
@@ -19,4 +19,12 @@ export default {
   section{
     background: #000;
   }
+
+
+  @media screen and (max-width: 420px) {
+    #video .row{
+      padding: 0;
+    }
+  }
+
 </style>

@@ -42,7 +42,7 @@ export default {
   },
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: 'GG',
+    title: 'Greater Good',
     // all titles will be injected into this template
     titleTemplate: 'Greater Good | Music producer. Beats, instrumentals, composition. Beats for sale',
     meta: [
@@ -52,24 +52,24 @@ export default {
       // The list of types is available here: http://ogp.me/#types
       {property: 'og:type', content: 'website'},
       // Should the the same as your canonical link, see below.
-      {property: 'og:url', content: 'https://www.my-site.com/my-special-page'},
-      {property: 'og:image', content: 'https://www.my-site.com/my-special-image.jpg'},
+      {property: 'og:url', content: 'https://greatergood.productions'},
+      {property: 'og:image', content: 'https://i.scdn.co/image/83ce3a019a5b6e26f47e6c47062e0f170c3df4c7'},
       // Often the same as your meta description, but not always.
       {property: 'og:description', content: 'Hip hop beatmaker and producer'},
 
       // Twitter card
       {name: 'twitter:card', content: 'summary'},
-      {name: 'twitter:site', content: 'https://www.my-site.com/my-special-page'},
+      {name: 'twitter:site', content: 'https://greatergood.productions'},
       {name: 'twitter:title', content: 'Greater Good beatmaker'},
       {name: 'twitter:description', content: 'Hip hop beatmaker and producer'},
       // Your twitter handle, if you have one.
       {name: 'twitter:creator', content: '@greater_good13'},
-      {name: 'twitter:image:src', content: 'https://www.my-site.com/my-special-image.jpg'},
+      {name: 'twitter:image:src', content: 'https://i.scdn.co/image/83ce3a019a5b6e26f47e6c47062e0f170c3df4c7'},
 
       // Google / Schema.org markup:
       {itemprop: 'name', content: 'Greater Good beatmaker'},
       {itemprop: 'description', content: 'Hip hop beatmaker and producer'},
-      {itemprop: 'image', content: 'https://www.my-site.com/my-special-image.jpg'}
+      {itemprop: 'image', content: 'https://i.scdn.co/image/83ce3a019a5b6e26f47e6c47062e0f170c3df4c7'}
     ]
   }
 }
@@ -217,9 +217,9 @@ article .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb{
   }
 }
 
-h2{
-  opacity: 0;
-}
+// h2{
+//   opacity: 0;
+// }
 h2.in-viewport{
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
@@ -255,6 +255,13 @@ h2.in-viewport{
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
+}
+
+
+@media screen and (max-width: 420px) {
+h1, h2, h3{
+  opacity: 1;
+}
 }
 
 

@@ -1,6 +1,6 @@
 <template>
   <header>
-      <img src="../assets/gg.png" class="logo">
+      <img src="../assets/gg.png" class="logo" alt="greater good logo">
     <nav>
     <ul>
       <li><a v-scroll-to="'#music'">Music</a></li>     

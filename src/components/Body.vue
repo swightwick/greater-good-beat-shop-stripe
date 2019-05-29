@@ -111,36 +111,36 @@ export default {
         } 
       });
     },
-    /// BEAT4
-    beat4() {
-      this.$checkout.open({
-        name: 'Beat 2 MP3',
-        currency: 'GBP',
-        amount: 10000,
-        token: (token) => {
-        } 
-      });
-    },
-    /// BEAT4
-    beat5() {
-      this.$checkout.open({
-        name: 'Beat 2 MP3',
-        currency: 'GBP',
-        amount: 10000,
-        token: (token) => {
-        } 
-      });
-    },
-    /// BEAT4
-    beat6() {
-      this.$checkout.open({
-        name: 'Beat 2 MP3',
-        currency: 'GBP',
-        amount: 10000,
-        token: (token) => {
-        } 
-      });
-    },
+    // /// BEAT4
+    // beat4() {
+    //   this.$checkout.open({
+    //     name: 'Beat 2 MP3',
+    //     currency: 'GBP',
+    //     amount: 10000,
+    //     token: (token) => {
+    //     } 
+    //   });
+    // },
+    // /// BEAT4
+    // beat5() {
+    //   this.$checkout.open({
+    //     name: 'Beat 2 MP3',
+    //     currency: 'GBP',
+    //     amount: 10000,
+    //     token: (token) => {
+    //     } 
+    //   });
+    // },
+    // /// BEAT4
+    // beat6() {
+    //   this.$checkout.open({
+    //     name: 'Beat 2 MP3',
+    //     currency: 'GBP',
+    //     amount: 10000,
+    //     token: (token) => {
+    //     } 
+    //   });
+    // },
   },
   props: {
     msg: String,
@@ -242,9 +242,16 @@ li {
 }
 
 
+@media screen and (max-width: 420px) {
+h1, h2, h3{
+  opacity: 1 !important;
+}
+}
+
+/* 
 h1, h3{
   opacity: 0;
-}
+} */
 h1.in-viewport, h3.in-viewport{
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
